@@ -1,0 +1,27 @@
+---
+name: Enhancement template
+about: Enhancement 라벨에 사용하는 템플릿입니다
+title: "Enhancement"
+labels: "Enhancement"
+assignees:
+---
+
+## 요약
+
+<!-- 해당 이슈에 대한 전반적인 내용을 2~3줄로 요약해주세요. -->
+
+-
+
+<br><br>
+
+## 내용
+
+<!-- 해당 이슈에 대한 자세한 내용을 적어주세요. -->
+
+<br><br>
+
+## 참고자료
+
+<!-- 해당 이슈와 함께 참고하면 좋을 자료를 링크해주세요. ![내용](링크) -->
+
+<br><br>
