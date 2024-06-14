@@ -1,0 +1,5 @@
+2024-06-14T17:48:19,676 - /127.0.0.1:64113 "GET /predictions/efficientenet_apple HTTP/1.1" 404 4
+2024-06-14T17:48:19,880 - /127.0.0.1:64114 "GET /favicon.ico HTTP/1.1" 404 0
+2024-06-14T17:49:48,389 - /127.0.0.1:64121 "GET /predictions/efficientnet_apple HTTP/1.1" 404 1
+2024-06-14T17:51:06,900 - /127.0.0.1:64129 "GET /predictions/efficientnet_apple HTTP/1.1" 404 0
+2024-06-14T17:51:08,787 - /127.0.0.1:64130 "GET /predictions/efficientnet_apple HTTP/1.1" 404 1

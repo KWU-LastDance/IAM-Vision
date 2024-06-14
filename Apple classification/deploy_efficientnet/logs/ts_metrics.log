@@ -1,0 +1,6 @@
+2024-06-14T17:48:19,679 - Requests4XX.Count:1.0|#Level:Host|#hostname:DESKTOP-SB01MFU,timestamp:1718354899
+2024-06-14T17:48:19,881 - Requests4XX.Count:1.0|#Level:Host|#hostname:DESKTOP-SB01MFU,timestamp:1718354899
+2024-06-14T17:49:48,390 - Requests4XX.Count:1.0|#Level:Host|#hostname:DESKTOP-SB01MFU,timestamp:1718354988
+2024-06-14T17:51:06,902 - Requests4XX.Count:1.0|#Level:Host|#hostname:DESKTOP-SB01MFU,timestamp:1718355066
+2024-06-14T17:51:08,788 - Requests4XX.Count:1.0|#Level:Host|#hostname:DESKTOP-SB01MFU,timestamp:1718355068
+2024-06-14T17:53:56,578 - ts_inference_requests_total.Count:1.0|#model_name:efficientnet_apple,model_version:default|#hostname:DESKTOP-SB01MFU,timestamp:1718355236

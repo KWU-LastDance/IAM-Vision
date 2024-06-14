@@ -1,0 +1,1585 @@
+2024-06-14T17:35:47,128 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2024-06-14T17:35:47,128 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2024-06-14T17:35:47,973 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2024-06-14T17:35:47,973 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2024-06-14T17:35:47,974 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2024-06-14T17:35:47,974 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2024-06-14T17:35:48,143 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml
+2024-06-14T17:35:48,143 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml
+2024-06-14T17:35:48,990 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.11.0
+TS Home: C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages
+Current directory: C:\사과 분류\사과 분류\deploy
+Temp directory: C:\Users\KIMSAN~1\AppData\Local\Temp
+Metrics config path: C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml
+Number of GPUs: 1
+Number of CPUs: 8
+Max heap size: 4062 M
+Python executable: C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe
+Config file: config.properties
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\사과 분류\사과 분류\deploy\model_store
+Initial Models: efficientnet_apple.mar
+Log dir: C:\사과 분류\사과 분류\deploy\logs
+Metrics dir: C:\사과 분류\사과 분류\deploy\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: C:\사과 분류\사과 분류\deploy\model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+2024-06-14T17:35:48,990 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.11.0
+TS Home: C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages
+Current directory: C:\사과 분류\사과 분류\deploy
+Temp directory: C:\Users\KIMSAN~1\AppData\Local\Temp
+Metrics config path: C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml
+Number of GPUs: 1
+Number of CPUs: 8
+Max heap size: 4062 M
+Python executable: C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe
+Config file: config.properties
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\사과 분류\사과 분류\deploy\model_store
+Initial Models: efficientnet_apple.mar
+Log dir: C:\사과 분류\사과 분류\deploy\logs
+Metrics dir: C:\사과 분류\사과 분류\deploy\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: C:\사과 분류\사과 분류\deploy\model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+2024-06-14T17:35:49,016 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: efficientnet_apple.mar
+2024-06-14T17:35:49,016 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: efficientnet_apple.mar
+2024-06-14T17:35:51,591 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model efficientnet_apple
+2024-06-14T17:35:51,591 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model efficientnet_apple
+2024-06-14T17:35:51,592 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model efficientnet_apple
+2024-06-14T17:35:51,592 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model efficientnet_apple
+2024-06-14T17:35:51,594 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model efficientnet_apple loaded.
+2024-06-14T17:35:51,594 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model efficientnet_apple loaded.
+2024-06-14T17:35:51,597 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: efficientnet_apple, count: 1
+2024-06-14T17:35:51,597 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: efficientnet_apple, count: 1
+2024-06-14T17:35:51,641 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2024-06-14T17:35:51,641 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2024-06-14T17:35:51,654 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:35:51,654 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:35:52,091 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2024-06-14T17:35:52,091 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2024-06-14T17:35:52,092 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2024-06-14T17:35:52,092 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2024-06-14T17:35:52,111 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2024-06-14T17:35:52,111 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2024-06-14T17:35:52,111 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2024-06-14T17:35:52,111 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2024-06-14T17:35:52,115 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2024-06-14T17:35:52,115 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2024-06-14T17:35:53,082 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:35:53,082 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:35:53,728 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2024-06-14T17:35:53,728 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2024-06-14T17:36:02,776 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:36:02,827 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:36:02,829 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:36:02,830 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:36:02,831 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:36:02,832 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:36:02,834 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:36:02,835 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:36:02,836 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:36:03,638 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:36:03,638 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:36:03,638 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:36:03,638 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:36:03,642 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:36:03,642 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:36:03,704 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change null -> WORKER_STOPPED
+2024-06-14T17:36:03,704 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change null -> WORKER_STOPPED
+2024-06-14T17:36:03,705 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery start timestamp: 1718354163705
+2024-06-14T17:36:03,705 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery start timestamp: 1718354163705
+2024-06-14T17:36:03,707 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-06-14T17:36:03,707 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-06-14T17:36:04,740 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:36:04,740 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:36:14,666 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:36:14,707 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:36:14,709 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:36:14,710 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:36:14,711 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:36:14,712 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:36:14,713 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:36:14,714 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:36:14,714 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:36:15,185 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:36:15,185 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:36:15,185 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:36:15,185 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:36:15,189 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:36:15,189 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:36:15,191 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:36:15,191 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:36:15,192 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:36:15,192 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:36:15,196 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-06-14T17:36:15,196 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-06-14T17:36:16,239 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:36:16,239 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:02,294 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2024-06-14T17:48:02,294 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2024-06-14T17:48:02,913 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2024-06-14T17:48:02,913 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2024-06-14T17:48:02,914 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2024-06-14T17:48:02,914 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2024-06-14T17:48:03,018 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml
+2024-06-14T17:48:03,018 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml
+2024-06-14T17:48:03,562 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.11.0
+TS Home: C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages
+Current directory: C:\사과 분류\사과 분류\deploy
+Temp directory: C:\Users\KIMSAN~1\AppData\Local\Temp
+Metrics config path: C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml
+Number of GPUs: 1
+Number of CPUs: 8
+Max heap size: 4062 M
+Python executable: C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe
+Config file: logs\config\20240614173552118-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\사과 분류\사과 분류\deploy\model_store
+Initial Models: efficientnet_apple.mar
+Log dir: C:\사과 분류\사과 분류\deploy\logs
+Metrics dir: C:\사과 분류\사과 분류\deploy\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: C:\사과 분류\사과 분류\deploy\model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+2024-06-14T17:48:03,562 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.11.0
+TS Home: C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages
+Current directory: C:\사과 분류\사과 분류\deploy
+Temp directory: C:\Users\KIMSAN~1\AppData\Local\Temp
+Metrics config path: C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml
+Number of GPUs: 1
+Number of CPUs: 8
+Max heap size: 4062 M
+Python executable: C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe
+Config file: logs\config\20240614173552118-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\사과 분류\사과 분류\deploy\model_store
+Initial Models: efficientnet_apple.mar
+Log dir: C:\사과 분류\사과 분류\deploy\logs
+Metrics dir: C:\사과 분류\사과 분류\deploy\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: C:\사과 분류\사과 분류\deploy\model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+2024-06-14T17:48:03,571 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20240614173552118-startup.cfg",
+  "modelCount": 1,
+  "created": 1718354152127,
+  "models": {
+    "efficientnet_apple": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "efficientnet_apple.mar",
+        "minWorkers": 1,
+        "maxWorkers": 1,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120,
+        "runtimeType": "python"
+      }
+    }
+  }
+}
+2024-06-14T17:48:03,571 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20240614173552118-startup.cfg",
+  "modelCount": 1,
+  "created": 1718354152127,
+  "models": {
+    "efficientnet_apple": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "efficientnet_apple.mar",
+        "minWorkers": 1,
+        "maxWorkers": 1,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120,
+        "runtimeType": "python"
+      }
+    }
+  }
+}
+2024-06-14T17:48:03,581 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20240614173552118-startup.cfg
+2024-06-14T17:48:03,581 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20240614173552118-startup.cfg
+2024-06-14T17:48:03,583 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20240614173552118-startup.cfg validated successfully
+2024-06-14T17:48:03,583 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20240614173552118-startup.cfg validated successfully
+2024-06-14T17:48:04,631 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model efficientnet_apple
+2024-06-14T17:48:04,631 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model efficientnet_apple
+2024-06-14T17:48:04,631 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model efficientnet_apple
+2024-06-14T17:48:04,631 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model efficientnet_apple
+2024-06-14T17:48:04,632 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model efficientnet_apple
+2024-06-14T17:48:04,632 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model efficientnet_apple
+2024-06-14T17:48:04,633 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model efficientnet_apple loaded.
+2024-06-14T17:48:04,633 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model efficientnet_apple loaded.
+2024-06-14T17:48:04,633 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: efficientnet_apple, count: 1
+2024-06-14T17:48:04,633 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: efficientnet_apple, count: 1
+2024-06-14T17:48:04,645 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2024-06-14T17:48:04,645 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2024-06-14T17:48:04,652 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:04,652 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:04,896 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2024-06-14T17:48:04,896 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2024-06-14T17:48:04,897 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2024-06-14T17:48:04,897 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2024-06-14T17:48:04,900 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2024-06-14T17:48:04,900 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2024-06-14T17:48:04,901 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2024-06-14T17:48:04,901 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2024-06-14T17:48:04,904 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2024-06-14T17:48:04,904 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2024-06-14T17:48:05,387 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:48:05,387 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:48:05,802 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2024-06-14T17:48:05,802 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2024-06-14T17:48:08,912 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:48:08,932 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:48:08,933 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:48:08,934 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:48:08,934 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:48:08,934 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:48:08,934 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:48:08,935 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:48:08,935 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:48:09,154 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:48:09,154 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:48:09,154 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:48:09,154 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:48:09,156 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:48:09,156 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:48:09,175 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change null -> WORKER_STOPPED
+2024-06-14T17:48:09,175 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change null -> WORKER_STOPPED
+2024-06-14T17:48:09,175 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery start timestamp: 1718354889175
+2024-06-14T17:48:09,175 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery start timestamp: 1718354889175
+2024-06-14T17:48:09,177 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-06-14T17:48:09,177 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-06-14T17:48:10,191 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:10,191 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:14,176 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:48:14,197 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:48:14,198 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:48:14,198 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:48:14,199 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:48:14,199 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:48:14,199 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:48:14,200 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:48:14,200 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:48:14,411 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:48:14,411 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:48:14,411 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:48:14,411 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:48:14,412 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:48:14,412 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:48:14,413 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:48:14,413 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:48:14,413 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:48:14,413 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:48:14,414 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-06-14T17:48:14,414 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-06-14T17:48:15,433 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:15,433 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:19,176 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:48:19,191 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:48:19,191 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:48:19,192 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:48:19,192 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:48:19,193 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:48:19,193 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:48:19,193 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:48:19,194 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:48:19,418 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:48:19,418 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:48:19,418 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:48:19,418 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:48:19,419 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:48:19,419 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:48:19,420 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:48:19,420 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:48:19,420 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:48:19,420 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:48:19,420 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 2 seconds.
+2024-06-14T17:48:19,420 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 2 seconds.
+2024-06-14T17:48:19,676 [INFO ] nioEventLoopGroup-3-1 ACCESS_LOG - /127.0.0.1:64113 "GET /predictions/efficientenet_apple HTTP/1.1" 404 4
+2024-06-14T17:48:19,679 [INFO ] nioEventLoopGroup-3-1 TS_METRICS - Requests4XX.Count:1.0|#Level:Host|#hostname:DESKTOP-SB01MFU,timestamp:1718354899
+2024-06-14T17:48:19,880 [INFO ] nioEventLoopGroup-3-2 ACCESS_LOG - /127.0.0.1:64114 "GET /favicon.ico HTTP/1.1" 404 0
+2024-06-14T17:48:19,881 [INFO ] nioEventLoopGroup-3-2 TS_METRICS - Requests4XX.Count:1.0|#Level:Host|#hostname:DESKTOP-SB01MFU,timestamp:1718354899
+2024-06-14T17:48:21,440 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:21,440 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:25,370 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:48:25,385 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:48:25,386 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:48:25,386 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:48:25,387 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:48:25,387 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:48:25,387 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:48:25,388 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:48:25,388 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:48:25,619 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:48:25,619 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:48:25,619 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:48:25,619 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:48:25,620 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:48:25,620 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:48:25,621 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:48:25,621 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:48:25,621 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:48:25,621 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:48:25,622 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 3 seconds.
+2024-06-14T17:48:25,622 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 3 seconds.
+2024-06-14T17:48:28,633 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:28,633 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:32,881 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:48:32,911 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:48:32,912 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:48:32,912 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:48:32,913 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:48:32,913 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:48:32,914 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:48:32,914 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:48:32,915 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:48:33,182 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:48:33,182 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:48:33,182 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:48:33,182 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:48:33,183 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:48:33,183 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:48:33,184 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:48:33,184 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:48:33,184 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:48:33,184 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:48:33,185 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 5 seconds.
+2024-06-14T17:48:33,185 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 5 seconds.
+2024-06-14T17:48:38,196 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:38,196 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:42,378 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:48:42,391 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:48:42,392 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:48:42,392 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:48:42,392 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:48:42,393 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:48:42,393 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:48:42,393 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:48:42,394 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:48:42,605 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:48:42,605 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:48:42,605 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:48:42,605 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:48:42,606 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:48:42,606 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:48:42,607 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:48:42,607 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:48:42,608 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:48:42,608 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:48:42,608 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 8 seconds.
+2024-06-14T17:48:42,608 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 8 seconds.
+2024-06-14T17:48:50,615 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:50,615 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:48:55,017 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:48:55,029 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:48:55,030 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:48:55,030 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:48:55,031 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:48:55,031 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:48:55,031 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:48:55,032 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:48:55,032 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:48:55,258 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:48:55,258 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:48:55,258 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:48:55,258 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:48:55,259 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:48:55,259 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:48:55,259 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:48:55,259 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:48:55,260 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:48:55,260 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:48:55,260 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 13 seconds.
+2024-06-14T17:48:55,260 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 13 seconds.
+2024-06-14T17:49:05,396 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:49:05,396 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:49:05,735 [ERROR] Thread-2 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2024-06-14T17:49:05,735 [ERROR] Thread-2 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2024-06-14T17:49:08,277 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:49:08,277 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:49:12,576 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:49:12,602 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:49:12,603 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:49:12,604 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:49:12,604 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:49:12,605 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:49:12,606 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:49:12,606 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:49:12,606 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:49:12,868 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:49:12,868 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:49:12,868 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:49:12,868 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:49:12,869 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:49:12,869 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:49:12,870 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:49:12,870 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:49:12,870 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:49:12,870 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:49:12,871 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 21 seconds.
+2024-06-14T17:49:12,871 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 21 seconds.
+2024-06-14T17:49:33,881 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:49:33,881 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:49:38,156 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:49:38,177 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:49:38,178 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:49:38,178 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:49:38,179 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:49:38,179 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:49:38,179 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:49:38,180 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:49:38,180 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:49:38,443 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:49:38,443 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:49:38,443 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:49:38,443 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:49:38,444 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:49:38,444 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:49:38,445 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:49:38,445 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:49:38,445 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:49:38,445 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:49:38,445 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 34 seconds.
+2024-06-14T17:49:38,445 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 34 seconds.
+2024-06-14T17:49:48,389 [INFO ] nioEventLoopGroup-3-3 ACCESS_LOG - /127.0.0.1:64121 "GET /predictions/efficientnet_apple HTTP/1.1" 404 1
+2024-06-14T17:49:48,390 [INFO ] nioEventLoopGroup-3-3 TS_METRICS - Requests4XX.Count:1.0|#Level:Host|#hostname:DESKTOP-SB01MFU,timestamp:1718354988
+2024-06-14T17:50:05,394 [WARN ] pool-3-thread-2 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:50:05,394 [WARN ] pool-3-thread-2 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:50:05,827 [ERROR] Thread-3 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2024-06-14T17:50:05,827 [ERROR] Thread-3 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2024-06-14T17:50:12,456 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:50:12,456 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:50:17,511 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:50:17,529 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:50:17,531 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:50:17,531 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:50:17,531 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:50:17,531 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:50:17,532 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:50:17,532 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:50:17,532 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:50:17,841 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:50:17,841 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:50:17,841 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:50:17,841 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:50:17,842 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:50:17,842 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:50:17,843 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:50:17,843 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:50:17,843 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:50:17,843 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:50:17,843 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 55 seconds.
+2024-06-14T17:50:17,843 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 55 seconds.
+2024-06-14T17:51:05,418 [WARN ] pool-3-thread-2 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:51:05,418 [WARN ] pool-3-thread-2 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:51:05,961 [ERROR] Thread-4 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2024-06-14T17:51:05,961 [ERROR] Thread-4 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2024-06-14T17:51:06,900 [INFO ] nioEventLoopGroup-3-6 ACCESS_LOG - /127.0.0.1:64129 "GET /predictions/efficientnet_apple HTTP/1.1" 404 0
+2024-06-14T17:51:06,902 [INFO ] nioEventLoopGroup-3-6 TS_METRICS - Requests4XX.Count:1.0|#Level:Host|#hostname:DESKTOP-SB01MFU,timestamp:1718355066
+2024-06-14T17:51:08,787 [INFO ] nioEventLoopGroup-3-7 ACCESS_LOG - /127.0.0.1:64130 "GET /predictions/efficientnet_apple HTTP/1.1" 404 1
+2024-06-14T17:51:08,788 [INFO ] nioEventLoopGroup-3-7 TS_METRICS - Requests4XX.Count:1.0|#Level:Host|#hostname:DESKTOP-SB01MFU,timestamp:1718355068
+2024-06-14T17:51:12,864 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:51:12,864 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:51:16,841 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:51:16,853 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:51:16,854 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:51:16,855 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:51:16,855 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:51:16,855 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:51:16,856 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:51:16,856 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:51:16,856 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:51:17,112 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:51:17,112 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:51:17,112 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:51:17,112 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:51:17,113 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:51:17,113 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:51:17,114 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:51:17,114 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:51:17,114 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:51:17,114 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:51:17,115 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 89 seconds.
+2024-06-14T17:51:17,115 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 89 seconds.
+2024-06-14T17:52:05,400 [WARN ] pool-3-thread-2 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:52:05,400 [WARN ] pool-3-thread-2 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:52:05,714 [ERROR] Thread-5 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2024-06-14T17:52:05,714 [ERROR] Thread-5 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2024-06-14T17:52:36,836 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2024-06-14T17:52:36,836 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2024-06-14T17:52:37,497 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2024-06-14T17:52:37,497 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2024-06-14T17:52:37,498 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2024-06-14T17:52:37,498 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2024-06-14T17:52:37,612 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml
+2024-06-14T17:52:37,612 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml
+2024-06-14T17:52:38,149 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.11.0
+TS Home: C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages
+Current directory: C:\사과 분류\사과 분류\deploy
+Temp directory: C:\Users\KIMSAN~1\AppData\Local\Temp
+Metrics config path: C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml
+Number of GPUs: 1
+Number of CPUs: 8
+Max heap size: 4062 M
+Python executable: C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe
+Config file: logs\config\20240614174804905-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\사과 분류\사과 분류\deploy\model_store
+Initial Models: efficientnet_apple.mar
+Log dir: C:\사과 분류\사과 분류\deploy\logs
+Metrics dir: C:\사과 분류\사과 분류\deploy\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: C:\사과 분류\사과 분류\deploy\model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+2024-06-14T17:52:38,149 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.11.0
+TS Home: C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages
+Current directory: C:\사과 분류\사과 분류\deploy
+Temp directory: C:\Users\KIMSAN~1\AppData\Local\Temp
+Metrics config path: C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml
+Number of GPUs: 1
+Number of CPUs: 8
+Max heap size: 4062 M
+Python executable: C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe
+Config file: logs\config\20240614174804905-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\사과 분류\사과 분류\deploy\model_store
+Initial Models: efficientnet_apple.mar
+Log dir: C:\사과 분류\사과 분류\deploy\logs
+Metrics dir: C:\사과 분류\사과 분류\deploy\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: C:\사과 분류\사과 분류\deploy\model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+2024-06-14T17:52:38,171 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20240614174804905-startup.cfg",
+  "modelCount": 1,
+  "created": 1718354884906,
+  "models": {
+    "efficientnet_apple": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "efficientnet_apple.mar",
+        "minWorkers": 1,
+        "maxWorkers": 1,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120,
+        "runtimeType": "python"
+      }
+    }
+  }
+}
+2024-06-14T17:52:38,171 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20240614174804905-startup.cfg",
+  "modelCount": 1,
+  "created": 1718354884906,
+  "models": {
+    "efficientnet_apple": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "efficientnet_apple.mar",
+        "minWorkers": 1,
+        "maxWorkers": 1,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120,
+        "runtimeType": "python"
+      }
+    }
+  }
+}
+2024-06-14T17:52:38,187 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20240614174804905-startup.cfg
+2024-06-14T17:52:38,187 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20240614174804905-startup.cfg
+2024-06-14T17:52:38,191 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20240614174804905-startup.cfg validated successfully
+2024-06-14T17:52:38,191 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20240614174804905-startup.cfg validated successfully
+2024-06-14T17:52:39,662 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model efficientnet_apple
+2024-06-14T17:52:39,662 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model efficientnet_apple
+2024-06-14T17:52:39,663 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model efficientnet_apple
+2024-06-14T17:52:39,663 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model efficientnet_apple
+2024-06-14T17:52:39,664 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model efficientnet_apple
+2024-06-14T17:52:39,664 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model efficientnet_apple
+2024-06-14T17:52:39,664 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model efficientnet_apple loaded.
+2024-06-14T17:52:39,664 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model efficientnet_apple loaded.
+2024-06-14T17:52:39,664 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: efficientnet_apple, count: 1
+2024-06-14T17:52:39,664 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: efficientnet_apple, count: 1
+2024-06-14T17:52:39,692 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2024-06-14T17:52:39,692 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2024-06-14T17:52:39,699 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:52:39,699 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:52:40,029 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2024-06-14T17:52:40,029 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2024-06-14T17:52:40,031 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2024-06-14T17:52:40,031 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2024-06-14T17:52:40,035 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2024-06-14T17:52:40,035 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2024-06-14T17:52:40,036 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2024-06-14T17:52:40,036 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2024-06-14T17:52:40,038 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2024-06-14T17:52:40,038 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2024-06-14T17:52:40,698 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:52:40,698 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:52:43,105 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 71, in gpu_utilization
+    info = nvgpu.gpu_info()
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\nvgpu\__init__.py", line 23, in gpu_info
+    selected_lines[line_distance * i + 1].split('|')[2].strip().split('/')]
+IndexError: list index out of range
+
+2024-06-14T17:52:43,105 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 71, in gpu_utilization
+    info = nvgpu.gpu_info()
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\nvgpu\__init__.py", line 23, in gpu_info
+    selected_lines[line_distance * i + 1].split('|')[2].strip().split('/')]
+IndexError: list index out of range
+
+2024-06-14T17:52:44,778 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:52:44,797 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:52:44,797 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:52:44,798 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:52:44,799 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:52:44,799 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:52:44,800 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:52:44,801 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:52:44,802 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:52:45,053 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:52:45,053 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:52:45,053 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:52:45,053 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:52:45,055 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:52:45,055 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:52:45,078 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change null -> WORKER_STOPPED
+2024-06-14T17:52:45,078 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change null -> WORKER_STOPPED
+2024-06-14T17:52:45,078 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery start timestamp: 1718355165078
+2024-06-14T17:52:45,078 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery start timestamp: 1718355165078
+2024-06-14T17:52:45,079 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-06-14T17:52:45,079 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-06-14T17:52:46,086 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:52:46,086 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:52:49,844 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:52:49,861 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:52:49,862 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:52:49,863 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:52:49,863 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:52:49,864 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:52:49,864 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:52:49,864 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:52:49,865 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:52:50,120 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:52:50,120 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:52:50,120 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:52:50,120 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:52:50,122 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:52:50,122 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:52:50,123 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:52:50,123 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:52:50,123 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:52:50,123 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:52:50,124 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-06-14T17:52:50,124 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 1 seconds.
+2024-06-14T17:52:51,134 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:52:51,134 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:52:55,099 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:52:55,112 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:52:55,113 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:52:55,113 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:52:55,113 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:52:55,113 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:52:55,113 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:52:55,113 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:52:55,114 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:52:55,338 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:52:55,338 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:52:55,338 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:52:55,338 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:52:55,339 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:52:55,339 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:52:55,340 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:52:55,340 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:52:55,340 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:52:55,340 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:52:55,341 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 2 seconds.
+2024-06-14T17:52:55,341 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 2 seconds.
+2024-06-14T17:52:57,347 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:52:57,347 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:53:01,796 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:53:01,815 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:53:01,816 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:53:01,816 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:53:01,817 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:53:01,817 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:53:01,818 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:53:01,819 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:53:01,819 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:53:02,107 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:53:02,107 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:53:02,107 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:53:02,107 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:53:02,108 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:53:02,108 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:53:02,109 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:53:02,109 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:53:02,109 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:53:02,109 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:53:02,110 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 3 seconds.
+2024-06-14T17:53:02,110 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 3 seconds.
+2024-06-14T17:53:05,136 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:53:05,136 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:53:09,133 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:53:09,147 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:53:09,147 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:53:09,147 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:53:09,148 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:53:09,149 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:53:09,149 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:53:09,150 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:53:09,150 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:53:09,369 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:53:09,369 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:53:09,369 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:53:09,369 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:53:09,371 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:53:09,371 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:53:09,371 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:53:09,371 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:53:09,372 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:53:09,372 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:53:09,372 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 5 seconds.
+2024-06-14T17:53:09,372 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 5 seconds.
+2024-06-14T17:53:14,387 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:53:14,387 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:53:18,564 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:53:18,581 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:53:18,582 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:53:18,583 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:53:18,583 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:53:18,583 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:53:18,584 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:53:18,584 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:53:18,584 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:53:18,862 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:53:18,862 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:53:18,862 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:53:18,862 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:53:18,863 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:53:18,863 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:53:18,864 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:53:18,864 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:53:18,865 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:53:18,865 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:53:18,865 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 8 seconds.
+2024-06-14T17:53:18,865 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 8 seconds.
+2024-06-14T17:53:26,878 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:53:26,878 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:53:31,291 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:53:31,311 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:53:31,312 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:53:31,312 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:53:31,313 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:53:31,313 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:53:31,314 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:53:31,314 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:53:31,314 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:53:31,595 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:53:31,595 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:53:31,595 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:53:31,595 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:53:31,597 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:53:31,597 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:53:31,597 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:53:31,597 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:53:31,598 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:53:31,598 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:53:31,598 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 13 seconds.
+2024-06-14T17:53:31,598 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 13 seconds.
+2024-06-14T17:53:40,701 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:53:40,701 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:53:42,877 [ERROR] Thread-2 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 71, in gpu_utilization
+    info = nvgpu.gpu_info()
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\nvgpu\__init__.py", line 23, in gpu_info
+    selected_lines[line_distance * i + 1].split('|')[2].strip().split('/')]
+IndexError: list index out of range
+
+2024-06-14T17:53:42,877 [ERROR] Thread-2 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 71, in gpu_utilization
+    info = nvgpu.gpu_info()
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\nvgpu\__init__.py", line 23, in gpu_info
+    selected_lines[line_distance * i + 1].split('|')[2].strip().split('/')]
+IndexError: list index out of range
+
+2024-06-14T17:53:44,611 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:53:44,611 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:53:49,006 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:53:49,037 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:53:49,038 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:53:49,039 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:53:49,039 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:53:49,040 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:53:49,040 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:53:49,041 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:53:49,042 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:53:49,343 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:53:49,343 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:53:49,343 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:53:49,343 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:53:49,344 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:53:49,344 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:53:49,345 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:53:49,345 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:53:49,345 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:53:49,345 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:53:49,346 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 21 seconds.
+2024-06-14T17:53:49,346 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 21 seconds.
+2024-06-14T17:53:56,578 [INFO ] nioEventLoopGroup-3-2 TS_METRICS - ts_inference_requests_total.Count:1.0|#model_name:efficientnet_apple,model_version:default|#hostname:DESKTOP-SB01MFU,timestamp:1718355236
+2024-06-14T17:54:10,365 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:54:10,365 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:54:14,288 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:54:14,307 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:54:14,308 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:54:14,309 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:54:14,309 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:54:14,310 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:54:14,310 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:54:14,311 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:54:14,311 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:54:14,565 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:54:14,565 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:54:14,565 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:54:14,565 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:54:14,567 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:54:14,567 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:54:14,568 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:54:14,568 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:54:14,568 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:54:14,568 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:54:14,569 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 34 seconds.
+2024-06-14T17:54:14,569 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 34 seconds.
+2024-06-14T17:54:40,706 [WARN ] pool-3-thread-2 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:54:40,706 [WARN ] pool-3-thread-2 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:54:42,973 [ERROR] Thread-3 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 71, in gpu_utilization
+    info = nvgpu.gpu_info()
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\nvgpu\__init__.py", line 23, in gpu_info
+    selected_lines[line_distance * i + 1].split('|')[2].strip().split('/')]
+IndexError: list index out of range
+
+2024-06-14T17:54:42,973 [ERROR] Thread-3 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 71, in gpu_utilization
+    info = nvgpu.gpu_info()
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\nvgpu\__init__.py", line 23, in gpu_info
+    selected_lines[line_distance * i + 1].split('|')[2].strip().split('/')]
+IndexError: list index out of range
+
+2024-06-14T17:54:48,582 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:54:48,582 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:54:52,956 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:54:52,981 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:54:52,981 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:54:52,982 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:54:52,982 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:54:52,982 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:54:52,983 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:54:52,983 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:54:52,983 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:54:53,271 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:54:53,271 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:54:53,271 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:54:53,271 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:54:53,272 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:54:53,272 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:54:53,273 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:54:53,273 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:54:53,274 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:54:53,274 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:54:53,275 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 55 seconds.
+2024-06-14T17:54:53,275 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 55 seconds.
+2024-06-14T17:55:40,703 [WARN ] pool-3-thread-2 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:55:40,703 [WARN ] pool-3-thread-2 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:55:42,918 [ERROR] Thread-4 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 71, in gpu_utilization
+    info = nvgpu.gpu_info()
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\nvgpu\__init__.py", line 23, in gpu_info
+    selected_lines[line_distance * i + 1].split('|')[2].strip().split('/')]
+IndexError: list index out of range
+
+2024-06-14T17:55:42,918 [ERROR] Thread-4 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 71, in gpu_utilization
+    info = nvgpu.gpu_info()
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\nvgpu\__init__.py", line 23, in gpu_info
+    selected_lines[line_distance * i + 1].split('|')[2].strip().split('/')]
+IndexError: list index out of range
+
+2024-06-14T17:55:48,292 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:55:48,292 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\kim sang soo\anaconda3\envs\pytorch\python.exe, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000, --metrics-config, C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml]
+2024-06-14T17:55:52,542 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:55:52,573 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:55:52,575 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:55:52,575 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:55:52,575 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:55:52,576 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:55:52,576 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:55:52,577 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:55:52,577 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:55:52,832 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:55:52,832 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:55:52,832 [INFO ] W-9000-efficientnet_apple_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stdout
+2024-06-14T17:55:52,832 [INFO ] W-9000-efficientnet_apple_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-efficientnet_apple_1.0-stderr
+2024-06-14T17:55:52,833 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:55:52,833 [ERROR] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorkerPython(WorkerLifeCycle.java:189) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:105) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:365) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:190) [model-server.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-06-14T17:55:52,834 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:55:52,834 [DEBUG] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-efficientnet_apple_1.0 State change WORKER_STOPPED -> WORKER_STOPPED
+2024-06-14T17:55:52,834 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:55:52,834 [WARN ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Auto recovery failed again
+2024-06-14T17:55:52,835 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 89 seconds.
+2024-06-14T17:55:52,835 [INFO ] W-9000-efficientnet_apple_1.0 org.pytorch.serve.wlm.WorkerThread - Retry worker: 9000 in 89 seconds.
+2024-06-14T17:56:40,700 [WARN ] pool-3-thread-2 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:56:40,700 [WARN ] pool-3-thread-2 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2024-06-14T17:56:42,797 [ERROR] Thread-5 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 71, in gpu_utilization
+    info = nvgpu.gpu_info()
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\nvgpu\__init__.py", line 23, in gpu_info
+    selected_lines[line_distance * i + 1].split('|')[2].strip().split('/')]
+IndexError: list index out of range
+
+2024-06-14T17:56:42,797 [ERROR] Thread-5 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\ts\metrics\system_metrics.py", line 71, in gpu_utilization
+    info = nvgpu.gpu_info()
+  File "C:\Users\kim sang soo\anaconda3\envs\pytorch\lib\site-packages\nvgpu\__init__.py", line 23, in gpu_info
+    selected_lines[line_distance * i + 1].split('|')[2].strip().split('/')]
+IndexError: list index out of range
+

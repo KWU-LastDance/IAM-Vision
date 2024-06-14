@@ -1,0 +1,216 @@
+2024-06-14T17:36:02,776 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:36:02,827 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:36:02,829 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:36:02,830 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:36:02,831 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:36:02,832 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:36:02,834 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:36:02,835 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:36:02,836 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:36:14,666 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:36:14,707 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:36:14,709 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:36:14,710 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:36:14,711 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:36:14,712 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:36:14,713 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:36:14,714 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:36:14,714 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:48:08,912 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:48:08,932 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:48:08,933 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:48:08,934 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:48:08,934 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:48:08,934 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:48:08,934 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:48:08,935 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:48:08,935 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:48:14,176 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:48:14,197 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:48:14,198 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:48:14,198 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:48:14,199 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:48:14,199 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:48:14,199 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:48:14,200 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:48:14,200 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:48:19,176 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:48:19,191 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:48:19,191 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:48:19,192 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:48:19,192 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:48:19,193 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:48:19,193 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:48:19,193 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:48:19,194 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:48:25,370 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:48:25,385 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:48:25,386 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:48:25,386 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:48:25,387 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:48:25,387 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:48:25,387 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:48:25,388 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:48:25,388 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:48:32,881 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:48:32,911 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:48:32,912 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:48:32,912 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:48:32,913 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:48:32,913 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:48:32,914 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:48:32,914 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:48:32,915 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:48:42,378 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:48:42,391 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:48:42,392 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:48:42,392 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:48:42,392 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:48:42,393 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:48:42,393 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:48:42,393 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:48:42,394 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:48:55,017 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:48:55,029 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:48:55,030 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:48:55,030 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:48:55,031 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:48:55,031 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:48:55,031 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:48:55,032 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:48:55,032 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:49:12,576 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:49:12,602 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:49:12,603 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:49:12,604 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:49:12,604 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:49:12,605 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:49:12,606 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:49:12,606 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:49:12,606 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:49:38,156 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:49:38,177 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:49:38,178 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:49:38,178 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:49:38,179 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:49:38,179 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:49:38,179 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:49:38,180 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:49:38,180 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:50:17,511 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:50:17,529 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:50:17,531 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:50:17,531 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:50:17,531 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:50:17,531 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:50:17,532 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:50:17,532 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:50:17,532 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:51:16,841 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:51:16,853 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:51:16,854 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:51:16,855 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:51:16,855 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:51:16,855 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:51:16,856 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:51:16,856 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:51:16,856 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:52:44,778 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:52:44,797 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:52:44,797 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:52:44,798 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:52:44,799 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:52:44,799 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:52:44,800 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:52:44,801 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:52:44,802 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:52:49,844 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:52:49,861 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:52:49,862 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:52:49,863 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:52:49,863 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:52:49,864 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:52:49,864 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:52:49,864 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:52:49,865 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:52:55,099 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:52:55,112 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:52:55,113 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:52:55,113 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:52:55,113 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:52:55,113 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:52:55,113 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:52:55,113 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:52:55,114 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:53:01,796 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:53:01,815 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:53:01,816 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:53:01,816 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:53:01,817 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:53:01,817 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:53:01,818 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:53:01,819 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:53:01,819 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:53:09,133 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:53:09,147 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:53:09,147 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:53:09,147 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:53:09,148 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:53:09,149 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:53:09,149 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:53:09,150 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:53:09,150 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:53:18,564 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:53:18,581 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:53:18,582 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:53:18,583 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:53:18,583 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:53:18,583 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:53:18,584 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:53:18,584 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:53:18,584 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:53:31,291 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:53:31,311 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:53:31,312 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:53:31,312 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:53:31,313 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:53:31,313 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:53:31,314 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:53:31,314 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:53:31,314 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:53:49,006 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:53:49,037 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:53:49,038 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:53:49,039 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:53:49,039 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:53:49,040 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:53:49,040 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:53:49,041 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:53:49,042 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:54:14,288 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:54:14,307 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:54:14,308 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:54:14,309 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:54:14,309 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:54:14,310 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:54:14,310 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:54:14,311 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:54:14,311 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:54:52,956 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:54:52,981 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:54:52,981 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:54:52,982 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:54:52,982 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:54:52,982 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:54:52,983 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:54:52,983 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:54:52,983 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
+2024-06-14T17:55:52,542 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-06-14T17:55:52,573 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages/ts/configs/metrics.yaml.
+2024-06-14T17:55:52,575 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-06-14T17:55:52,575 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-06-14T17:55:52,575 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 263, in <module>
+2024-06-14T17:55:52,576 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-06-14T17:55:52,576 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -   File "C:\Users\kim sang soo\anaconda3\envs\pytorch\Lib\site-packages\ts\model_service_worker.py", line 217, in run_server
+2024-06-14T17:55:52,577 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-06-14T17:55:52,577 [INFO ] W-9000-efficientnet_apple_1.0-stdout MODEL_LOG - OSError: [WinError 10013] ????? ????? ???? ?????? ????? ??????? ?????????
