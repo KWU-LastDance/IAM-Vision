@@ -1,0 +1,22 @@
+해당 분류 모델은 resnet18을 기반임
+
+import torch
+import torch.nn as nn
+from torchvision import models, transforms
+import numpy as np
+import cv2
+import matplotlib.pyplot as plt
+import seaborn as sns
+from PIL import Image
+import os
+import pickle
+
+# 모델 정의 및 불러오기
+model = models.resnet18(pretrained=False)
+num_ftrs = model.fc.in_features
+model.fc = nn.Linear(num_ftrs, 2)  # 이진 분류 (상한 사과 vs 상하지 않은 사과)
+
+# 학습된 모델 로드
+model_path = r"classification_model.h5"
+model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
+model.eval()
