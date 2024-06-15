@@ -104,7 +104,7 @@ def main():
         ).interactive()
         col1.altair_chart(line_chart, use_container_width=True)
 
-    # 품질별 가장 많이 팔린 날 구하기
+    # 품질별 재고 가장 많은날 구하기
     peak_days = []
     for quality in ['special', 'good', 'bad']:
         peak_day = filtered_data.loc[filtered_data[quality].idxmax(), ['date', quality]]
@@ -112,9 +112,9 @@ def main():
 
     peak_data = pd.DataFrame(peak_days)
 
-    # 품질별 가장 많이 팔린 날을 막대 차트로 시각화
+    # 품질별 재고 가장 많은 날을 막대 차트로 시각화
     with col2:
-        st.subheader("Top Sales Day by Quality")
+        st.subheader("Top Day for Apple Inventory")
         peak_chart = alt.Chart(peak_data).mark_bar().encode(
             x=alt.X('quantity:Q', title='수량'),
             y=alt.Y('date:T', title='날짜', sort='-x'),
