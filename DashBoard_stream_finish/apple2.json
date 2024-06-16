@@ -1,0 +1,90 @@
+[
+  {
+    "product_name": "사과 - 보통",
+    "type": "store",
+    "previous_stock": 100,
+    "current_stock": 120,
+    "timestamp": "2024-06-12T23:08:15",
+    "automated": false
+  },
+  {
+    "product_name": "사과 - 보통",
+    "type": "store",
+    "previous_stock": 120,
+    "current_stock": 140,
+    "timestamp": "2024-06-12T23:12:43",
+    "automated": false
+  },
+  {
+    "product_name": "사과 - 보통",
+    "type": "store",
+    "previous_stock": 140,
+    "current_stock": 160,
+    "timestamp": "2024-06-12T23:13:09",
+    "automated": false
+  },
+  {
+    "product_name": "사과 - 보통",
+    "type": "store",
+    "previous_stock": 160,
+    "current_stock": 180,
+    "timestamp": "2024-06-12T23:13:24",
+    "automated": false
+  },
+  {
+    "product_name": "사과 - 보통",
+    "type": "store",
+    "previous_stock": 180,
+    "current_stock": 200,
+    "timestamp": "2024-06-12T23:13:53",
+    "automated": false
+  },
+  {
+    "product_name": "사과 - 보통",
+    "type": "release",
+    "previous_stock": 200,
+    "current_stock": 120,
+    "timestamp": "2024-06-12T23:13:53",
+    "automated": false
+  },
+  {
+    "product_name": "사과 - 보통",
+    "type": "release",
+    "previous_stock": 120,
+    "current_stock": 40,
+    "timestamp": "2024-06-12T23:19:17",
+    "automated": false
+  },
+  {
+    "product_name": "사과 - 보통",
+    "type": "store",
+    "previous_stock": 40,
+    "current_stock": 140,
+    "timestamp": "2024-06-15T16:43:28",
+    "automated": false
+  },
+  {
+    "product_name": "사과 - 보통",
+    "type": "store",
+    "previous_stock": 140,
+    "current_stock": 240,
+    "timestamp": "2024-06-15T16:43:29",
+    "automated": false
+  },
+  {
+    "product_name": "사과 - 보통",
+    "type": "store",
+    "previous_stock": 240,
+    "current_stock": 340,
+    "timestamp": "2024-06-15T16:43:32",
+    "automated": false
+  },
+  {
+    "product_name": "사과 - 보통",
+    "type": "store",
+    "previous_stock": 340,
+    "current_stock": 440,
+    "timestamp": "2024-06-15T16:43:35",
+    "automated": false
+  }
+]
