@@ -53,42 +53,42 @@ def temperature_humidity_changes():
     #온도 선택시
     if chart_option == 'Temperature':
         with col1:
+            st.subheader("Temperature Change")
             temperature_chart = alt.Chart(filtered_data).mark_line(color='red').encode(
                 x='timestamp:T',
-                y=alt.Y('temperature:Q', axis=alt.Axis(title='Temperature (°C)')),
+                y=alt.Y('temperature:Q', scale=alt.Scale(domain=[filtered_data['temperature'].min() - 1, filtered_data['temperature'].max() + 1]), axis=alt.Axis(title='Temperature (°C)')),
                 tooltip=['timestamp:T', 'temperature:Q']
             ).properties(
                 width='container',
-                height=300,
-                title='Temperature Change'
+                height=300
             )
             st.altair_chart(temperature_chart, use_container_width=True)
 
     #습도 선택시
     elif chart_option == 'Humidity':
         with col1:
+            st.subheader("Humidity Change")
             humidity_chart = alt.Chart(filtered_data).mark_line(color='blue').encode(
                 x='timestamp:T',
                 y=alt.Y('humidity:Q', scale=alt.Scale(domain=[filtered_data['humidity'].min() - 1, filtered_data['humidity'].max() + 1]), axis=alt.Axis(title='Humidity (%)')),
                 tooltip=['timestamp:T', 'humidity:Q']
             ).properties(
                 width='container',
-                height=300,
-                title='Humidity Change'
+                height=300
             )
             st.altair_chart(humidity_chart, use_container_width=True)
 
     #both선택시
     else:
         with col1:
+            st.subheader("Temperature and Humidity Change")
             temperature_chart = alt.Chart(filtered_data).mark_line(color='red').encode(
                 x='timestamp:T',
-                y=alt.Y('temperature:Q', axis=alt.Axis(title='Temperature (°C)')),
+                y=alt.Y('temperature:Q', scale=alt.Scale(domain=[filtered_data['temperature'].min() - 1, filtered_data['temperature'].max() + 1]), axis=alt.Axis(title='Temperature (°C)')),
                 tooltip=['timestamp:T', 'temperature:Q']
             ).properties(
                 width='container',
-                height=300,
-                title='Temperature Change'
+                height=300
             )
 
             humidity_chart = alt.Chart(filtered_data).mark_line(color='blue').encode(
@@ -97,16 +97,14 @@ def temperature_humidity_changes():
                 tooltip=['timestamp:T', 'humidity:Q']
             ).properties(
                 width='container',
-                height=300,
-                title='Humidity Change'
+                height=300
             )
 
             combined_chart = alt.layer(temperature_chart, humidity_chart).resolve_scale(
                 y='independent'
             ).properties(
                 width='container',
-                height=300,
-                title='Temperature and Humidity Change'
+                height=300
             )
             st.altair_chart(combined_chart, use_container_width=True)
 
