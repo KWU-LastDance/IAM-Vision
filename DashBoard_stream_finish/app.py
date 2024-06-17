@@ -1,30 +1,129 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
-from datetime import datetime, timedelta
+from datetime import timedelta
 import json
+import statsmodels.api as sm
+from pmdarima import auto_arima
+import numpy as np
 
-# Streamlit 앱 설정
 st.set_page_config(page_title="재고 대시보드", layout="wide", initial_sidebar_state="auto")
-
-# JSON 파일 로드
-files = ['./apple.json', './apple1.json', './apple2.json']
-data_list = []
-
-for file in files:
-    with open(file, 'r', encoding='utf-8') as f:
-        data_list.extend(json.load(f))
-
-# JSON 데이터를 DataFrame으로 변환
-data = pd.json_normalize(data_list)
-data['timestamp'] = pd.to_datetime(data['timestamp'])
-data.rename(columns={'product_name': 'quality'}, inplace=True)
-
 # 변동량 계산 함수
 def calculate_change(current_value, previous_value):
     return current_value - previous_value
 
-def daily_stock_changes(data):
+def find_best_arima_params(series):
+    model = auto_arima(series, seasonal=False, trace=False, error_action='ignore', suppress_warnings=True)
+    return model.order
+
+def generate_forecast(series, order):
+    model = sm.tsa.ARIMA(series, order=order)
+    model_fit = model.fit()
+    forecast_result = model_fit.forecast(steps=1)
+    # forecast_result를 직접 검사하여 첫 번째 값만 반환하도록 함
+    forecast = forecast_result[0] if isinstance(forecast_result, (list, np.ndarray)) else forecast_result
+    return forecast
+
+#온도 습도 변화
+def temperature_humidity_changes():
+    
+    #데이터 수집은 수정필요
+    with open('./T_H.json', 'r') as file:
+        data = json.load(file)
+
+    df = pd.DataFrame(data)
+    df['timestamp'] = pd.to_datetime(df['timestamp'])
+    
+    st.sidebar.header("날짜 선택")
+    selected_date = st.sidebar.date_input("날짜를 선택하세요", value=df['timestamp'].min().date())
+
+    filtered_data = df[df['timestamp'].dt.date == selected_date]
+
+    chart_option = st.sidebar.radio(
+        "선택하세요:",
+        ('Temperature', 'Humidity', 'Both')
+    )
+
+    
+    col1, = st.columns([1])  
+
+    #온도 선택시
+    if chart_option == 'Temperature':
+        with col1:
+            temperature_chart = alt.Chart(filtered_data).mark_line(color='red').encode(
+                x='timestamp:T',
+                y=alt.Y('temperature:Q', axis=alt.Axis(title='Temperature (°C)')),
+                tooltip=['timestamp:T', 'temperature:Q']
+            ).properties(
+                width='container',
+                height=300,
+                title='Temperature Change'
+            )
+            st.altair_chart(temperature_chart, use_container_width=True)
+
+    #습도 선택시
+    elif chart_option == 'Humidity':
+        with col1:
+            humidity_chart = alt.Chart(filtered_data).mark_line(color='blue').encode(
+                x='timestamp:T',
+                y=alt.Y('humidity:Q', scale=alt.Scale(domain=[filtered_data['humidity'].min() - 1, filtered_data['humidity'].max() + 1]), axis=alt.Axis(title='Humidity (%)')),
+                tooltip=['timestamp:T', 'humidity:Q']
+            ).properties(
+                width='container',
+                height=300,
+                title='Humidity Change'
+            )
+            st.altair_chart(humidity_chart, use_container_width=True)
+
+    #both선택시
+    else:
+        with col1:
+            temperature_chart = alt.Chart(filtered_data).mark_line(color='red').encode(
+                x='timestamp:T',
+                y=alt.Y('temperature:Q', axis=alt.Axis(title='Temperature (°C)')),
+                tooltip=['timestamp:T', 'temperature:Q']
+            ).properties(
+                width='container',
+                height=300,
+                title='Temperature Change'
+            )
+
+            humidity_chart = alt.Chart(filtered_data).mark_line(color='blue').encode(
+                x='timestamp:T',
+                y=alt.Y('humidity:Q', scale=alt.Scale(domain=[filtered_data['humidity'].min() - 1, filtered_data['humidity'].max() + 1]), axis=alt.Axis(title='Humidity (%)')),
+                tooltip=['timestamp:T', 'humidity:Q']
+            ).properties(
+                width='container',
+                height=300,
+                title='Humidity Change'
+            )
+
+            combined_chart = alt.layer(temperature_chart, humidity_chart).resolve_scale(
+                y='independent'
+            ).properties(
+                width='container',
+                height=300,
+                title='Temperature and Humidity Change'
+            )
+            st.altair_chart(combined_chart, use_container_width=True)
+
+
+
+#일간 변화를 시각화
+def daily_stock_changes():
+    # 데이터 수집은 수정필요
+    files = ['./apple.json', './apple1.json', './apple2.json']
+    data_list = []
+
+    for file in files:
+        with open(file, 'r', encoding='utf-8') as f:
+            data_list.extend(json.load(f))
+
+    # JSON 데이터를 DataFrame으로 변환
+    data = pd.json_normalize(data_list)
+    data['timestamp'] = pd.to_datetime(data['timestamp'])
+    data.rename(columns={'product_name': 'quality'}, inplace=True)
+
     # 데이터 전처리
     data['timestamp'] = pd.to_datetime(data['timestamp'])
     data['date'] = data['timestamp'].dt.date
@@ -66,6 +165,7 @@ def daily_stock_changes(data):
     good_data = stock_summary[stock_summary['quality'] == '사과 - 상']
     normal_data = stock_summary[stock_summary['quality'] == '사과 - 보통']
 
+    #데이터가 비어있으면 0으로 비어있지 않으면 변화량 계산
     if not special_data.empty:
         col1.metric("사과 - 특상", f'{special_data["current_stock_current"].values[0]}',
                     f'{special_data["change"].values[0]}')
@@ -136,9 +236,10 @@ def daily_stock_changes(data):
     )
     st.altair_chart(pie_chart, use_container_width=True)
 
+#기간별 변화를 시각화
 def periodic_stock_changes():
+    #데이터 수집은 수정 필요
     file_paths = ['./apple.json', './apple1.json', './apple2.json']
-    
     data = []
     for file_path in file_paths:
         data.append(pd.read_json(file_path))
@@ -159,18 +260,15 @@ def periodic_stock_changes():
 
     # 날짜 선택
     st.sidebar.header("날짜 범위 선택")
-    start_date = st.sidebar.date_input("시작 날짜", value=store_data['date'].min())
-    end_date = st.sidebar.date_input("종료 날짜", value=store_data['date'].max())
+    start_date = pd.to_datetime(st.sidebar.date_input("시작 날짜", value=store_data['date'].min()))
+    end_date = pd.to_datetime(st.sidebar.date_input("종료 날짜", value=store_data['date'].max()))
 
     # 선택한 날짜 범위에 따라 데이터 필터링
-    filtered_store_data = store_data[(store_data['date'] >= pd.to_datetime(start_date)) & (store_data['date'] <= pd.to_datetime(end_date))]
-    filtered_release_data = release_data[(release_data['date'] >= pd.to_datetime(start_date)) & (release_data['date'] <= pd.to_datetime(end_date))]
+    filtered_store_data = store_data[(store_data['date'] >= start_date) & (store_data['date'] <= end_date)]
+    filtered_release_data = release_data[(release_data['date'] >= start_date) & (release_data['date'] <= end_date)]
+    
 
-    # 현재 갯수 계산
-    current_special_sum = filtered_store_data['특상'].sum()
-    current_good_sum = filtered_store_data['상'].sum()
-    current_bad_sum = filtered_store_data['보통'].sum()
-
+    #여기서 부터 시각화 시작
     st.title("Dashboard")
     st.divider()
     
@@ -299,15 +397,56 @@ def periodic_stock_changes():
         ).interactive()
         col3.altair_chart(movement_chart, use_container_width=True)
 
+
+ # 선택한 날짜 범위에 따라 데이터 필터링
+    filtered_store_data = store_data[(store_data['date'] >= start_date) & (store_data['date'] <= end_date)]
+
+    if st.sidebar.button('사과 수량 예측'):
+        forecast_results = {}
+        for quality in filtered_store_data.columns[1:]:  # 첫 번째 열은 'date'임
+            quality_data = filtered_store_data[quality]
+            if not quality_data.empty:
+                order = find_best_arima_params(quality_data)
+                forecast = generate_forecast(quality_data, order)
+                forecast_results[quality] = forecast
+
+        # 예측 결과를 DataFrame으로 변환
+        forecast_df = pd.DataFrame({
+            "Quality": list(forecast_results.keys()),
+            "Forecast": [int(f) for f in forecast_results.values()]
+        })
+
+        # Altair를 사용하여 바 차트 생성
+        forecast_chart = alt.Chart(forecast_df).mark_bar().encode(
+            y='Quality:N',  # y축에 품질 배치 (수평 바)
+            x='Forecast:Q',  # x축에 예측 수량 배치
+            color='Quality:N',  # 색상을 품질별로 다르게 설정
+            tooltip=['Quality', 'Forecast']  # 툴팁에 표시할 내용
+        ).properties(
+            width=600,  # 차트의 너비
+            height=300  # 차트의 높이
+        )
+
+
+        st.subheader("다음 날 예상 재고")
+        st.altair_chart(forecast_chart, use_container_width=True)
+
+
+
 def main():
     # 대시보드 모드 선택
-    st.sidebar.header("재고 변화")
-    mode = st.sidebar.selectbox("일별 or 기간별", ["Daily Stock Changes", "Periodic Stock Changes"])
+    st.sidebar.header("대시보드 선택")
+    dashboard_mode = st.sidebar.selectbox("온습도 or 재고", ["Stock Change", "Temperature and Humidity Change"])
+    if dashboard_mode=='Stock Change':
+        st.sidebar.header("재고 변화")
+        mode = st.sidebar.selectbox("일별 or 기간별", ["Daily Stock Changes", "Periodic Stock Changes"])
 
-    if mode == "Daily Stock Changes":
-        daily_stock_changes(data)
-    elif mode == "Periodic Stock Changes":
-        periodic_stock_changes()
+        if mode == "Daily Stock Changes":
+            daily_stock_changes()
+        elif mode == "Periodic Stock Changes":
+            periodic_stock_changes()
+    else:
+        temperature_humidity_changes()
 
 if __name__ == "__main__":
     main()
