@@ -136,12 +136,12 @@ def daily_stock_changes():
     # 선택한 날짜의 재고 데이터
     selected_date_data = data[data['date'] == selected_date]
 
-    # 선택한 날짜의 각 품질별 마지막 재고 값 추출 (선택한 날짜 포함)
-    latest_stock_data = data[data['timestamp'] <= pd.to_datetime(selected_date)].sort_values('timestamp').drop_duplicates('quality', keep='last')
+    # 선택한 다음날의 각 품질별 마지막 재고 값 추출
+    lastest_date=selected_date + timedelta(days=1)
+    latest_stock_data = data[data['timestamp'] <= pd.to_datetime(lastest_date)].sort_values('timestamp').drop_duplicates('quality', keep='last')
 
-    # 전날 데이터 추출 (선택한 날짜 제외)
-    previous_date = selected_date - timedelta(days=1)
-    previous_stock_data = data[data['timestamp'] <= pd.to_datetime(previous_date)].sort_values('timestamp').drop_duplicates('quality', keep='last')
+    # 오늘 데이터
+    previous_stock_data = data[data['timestamp'] <= pd.to_datetime(selected_date)].sort_values('timestamp').drop_duplicates('quality', keep='last')
 
     # 현재 재고와 전날 재고 병합 및 비교
     stock_summary = pd.merge(
