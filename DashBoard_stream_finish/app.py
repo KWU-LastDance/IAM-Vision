@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
-from datetime import timedelta
+from datetime import datetime, timedelta
 import json
 import statsmodels.api as sm
 from pmdarima import auto_arima
@@ -44,7 +44,10 @@ def temperature_humidity_changes():
         ('Temperature', 'Humidity', 'Both')
     )
 
+    st.title("Dashboard")
+    st.caption(f"{selected_date.strftime('%Y년 %m월 %d일')} 기준")
     
+    st.write('<hr style="margin: 10px 0;">', unsafe_allow_html=True)
     col1, = st.columns([1])  
 
     #온도 선택시
@@ -184,7 +187,7 @@ def daily_stock_changes():
     else:
         col3.metric("사과 - 보통", "0", "0")
 
-    st.divider()
+    st.write('<hr style="margin: 10px 0;">', unsafe_allow_html=True)
 
     col1, col2 = st.columns([0.6, 0.4])
 
@@ -270,7 +273,7 @@ def periodic_stock_changes():
 
     #여기서 부터 시각화 시작
     st.title("Dashboard")
-    st.divider()
+    st.write('<hr style="margin: 10px 0;">', unsafe_allow_html=True)
     
     col1, col2 = st.columns([0.6, 0.4])
 
